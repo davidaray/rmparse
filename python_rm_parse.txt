@@ -14,3 +14,21 @@ Take in a RepeatMasker output file and perform the following manipulations:
 	i.e. SINEs_rm.out, RC_rm.out, etc.
 	
 input file = aVan_rm.out
+
+
+Pseudocode
+Gotta get rid of the header lines 
+Initialize a list to store your data in
+Open the file for reading
+Read in your data line-by line from the file, leaving out the first three lines
+Replace the / with tabs in each line as you read it in. Could also replace kimura= at this point.
+Save that list to a new file 
+
+Read in the new file as a pandas dataframe, naming the columns so that they are easy to manipulate.
+Do the math to calculate the values for a new column, size. 
+Rearrange the columns
+Replace what needs to be replaced C for - and kimura= for nothing
+Output everything to a new file
+Delete the old 'new' file
+
+
